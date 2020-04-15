@@ -52,6 +52,12 @@ public class LoginController extends BaseController {
 	private InformationService informationService;
 	@Resource
 	private AfficheService afficheService;
+	
+	@RequestMapping("/main")
+	public String main() {
+		return "/index";
+		
+	}
 
 	/*
 	 * @RequestMapping("/main.html") public ModelAndView main(HttpSession session){
