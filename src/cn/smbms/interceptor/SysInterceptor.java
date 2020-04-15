@@ -10,6 +10,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import cn.smbms.pojo.User;
 import cn.smbms.tools.Constants;
 
+
 public class SysInterceptor extends HandlerInterceptorAdapter {
 	private Logger logger = Logger.getLogger(SysInterceptor.class);
 	
@@ -17,7 +18,7 @@ public class SysInterceptor extends HandlerInterceptorAdapter {
 		logger.debug("SysInterceptor preHandle ==========================");
 		HttpSession session = request.getSession();
 		
-		User user = (User)session.getAttribute(Constants.USER_SESSION);
+		User user = (User)session.getAttribute(Constants.SESSION_USER);
 		
 		if(null == user){
 			response.sendRedirect(request.getContextPath()+"/401.jsp");
