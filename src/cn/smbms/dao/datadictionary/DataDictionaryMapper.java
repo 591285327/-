@@ -3,7 +3,6 @@ package cn.smbms.dao.datadictionary;
 import java.util.List;
 
 import cn.smbms.pojo.DataDictionary;
-import cn.smbms.pojo.User;
 
 /**
  * DataDictionaryMapper

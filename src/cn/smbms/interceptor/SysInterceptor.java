@@ -14,6 +14,7 @@ import cn.smbms.tools.Constants;
 public class SysInterceptor extends HandlerInterceptorAdapter {
 	private Logger logger = Logger.getLogger(SysInterceptor.class);
 	
+	@Override
 	public boolean preHandle(HttpServletRequest request,HttpServletResponse response,Object handler) throws Exception{
 		logger.debug("SysInterceptor preHandle ==========================");
 		HttpSession session = request.getSession();

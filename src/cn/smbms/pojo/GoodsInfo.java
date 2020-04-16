@@ -29,9 +29,11 @@ public class GoodsInfo extends Base{
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
+	@Override
 	public Integer getId() {
 		return id;
 	}
+	@Override
 	public void setId(Integer id) {
 		this.id = id;
 	}

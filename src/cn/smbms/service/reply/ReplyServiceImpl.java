@@ -18,21 +18,25 @@ public class ReplyServiceImpl implements ReplyService{
 
 	@Resource
 	private ReplyMapper mapper;
+	@Override
 	public List<Reply> getReplyList(Reply replay) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getReplyList(replay);
 	}
 
+	@Override
 	public int count(Reply replay) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.count(replay);
 	}
 
+	@Override
 	public int delete(Reply replay) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.delete(replay);
 	}
 
+	@Override
 	public int addReply(Reply reply) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.addReply(reply);

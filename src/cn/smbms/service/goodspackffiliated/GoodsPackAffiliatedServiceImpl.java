@@ -19,23 +19,27 @@ public class GoodsPackAffiliatedServiceImpl implements GoodsPackAffiliatedServic
 	@Resource
 	private GoodsPackAffiliatedMapper mapper;
 
+	@Override
 	public List<GoodsPackAffiliated> getGoodsPackAffiliatedListById(
 			GoodsPackAffiliated goodsPackAffiliated) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getGoodsPackAffiliatedListById(goodsPackAffiliated);
 	}
 
+	@Override
 	public int addGoodsPackAffiliated(GoodsPackAffiliated goodsPackAffiliated)
 			throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.addGoodsPackAffiliated(goodsPackAffiliated);
 	}
 
+	@Override
 	public int modifyGoodsPackAffiliated(GoodsPackAffiliated goodsPackAffiliated) {
 		// TODO Auto-generated method stub
 		return mapper.modifyGoodsPackAffiliated(goodsPackAffiliated);
 	}
 
+	@Override
 	public int deleteGoodsPackAffiliated(GoodsPackAffiliated goodsPackAffiliated) {
 		// TODO Auto-generated method stub
 		return mapper.deleteGoodsPackAffiliated(goodsPackAffiliated);

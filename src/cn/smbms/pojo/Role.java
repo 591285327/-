@@ -46,9 +46,11 @@ public class Role extends Base{
 	public void setIsStart(Integer isStart) {
 		this.isStart = isStart;
 	}
+	@Override
 	public Integer getId() {
 		return id;
 	}
+	@Override
 	public void setId(Integer id) {
 		this.id = id;
 	}

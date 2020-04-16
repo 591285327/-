@@ -25,9 +25,11 @@ public class Function extends Base{
 	public void setRoleId(Integer roleId) {
 		this.roleId = roleId;
 	}
+	@Override
 	public Integer getId() {
 		return id;
 	}
+	@Override
 	public void setId(Integer id) {
 		this.id = id;
 	}

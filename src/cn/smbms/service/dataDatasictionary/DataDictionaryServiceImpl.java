@@ -17,47 +17,55 @@ import cn.smbms.pojo.DataDictionary;
 public class DataDictionaryServiceImpl implements DataDictionaryService{
 	@Resource
 	private DataDictionaryMapper mapper;
+	@Override
 	public List<DataDictionary> getDataDictionaries(
 			DataDictionary dataDictionary) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getDataDictionaries(dataDictionary);
 	}
 
+	@Override
 	public int addDataDictionary(DataDictionary dataDictionary)
 			throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.addDataDictionary(dataDictionary);
 	}
 
+	@Override
 	public int modifyDataDictionary(DataDictionary dataDictionary)
 			throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.modifyDataDictionary(dataDictionary);
 	}
 
+	@Override
 	public int deleteDataDictionary(DataDictionary dataDictionary)
 			throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.deleteDataDictionary(dataDictionary);
 	}
 
+	@Override
 	public List<DataDictionary> getDataDictionariesCategory() throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getDataDictionariesCategory();
 	}
 
+	@Override
 	public List<DataDictionary> getDataDictionariesNotIn(
 			DataDictionary dataDictionary) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getDataDictionariesNotIn(dataDictionary);
 	}
 
+	@Override
 	public int modifyDataDictionarys(DataDictionary dataDictionary)
 			throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.modifyDataDictionarys(dataDictionary);
 	}
 
+	@Override
 	public int typeCodeOrValueIdIsExit(DataDictionary dataDictionary) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.typeCodeOrValueIdIsExit(dataDictionary);

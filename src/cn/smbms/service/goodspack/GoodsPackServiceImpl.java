@@ -22,42 +22,50 @@ public class GoodsPackServiceImpl implements GoodsPackService{
 	@Resource
 	private GoodsPackAffiliatedMapper gpaMapper;
 
+	@Override
 	public List<GoodsPack> getGoodsPackList(GoodsPack goodsPack)
 			throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getGoodsPackList(goodsPack);
 	}
 
+	@Override
 	public int count(GoodsPack goodsPack) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.count(goodsPack);
 	}
 
+	@Override
 	public int addGoodsPack(GoodsPack goodsPack) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.addGoodsPack(goodsPack);
 	}
 
+	@Override
 	public int goodsPackCodeIsExit(GoodsPack goodsPack) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.goodsPackCodeIsExit(goodsPack);
 	}
 
+	@Override
 	public GoodsPack getGoodsPackById(GoodsPack goodsPack) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getGoodsPackById(goodsPack);
 	}
 
+	@Override
 	public int modifyGoodsPack(GoodsPack goodsPack) {
 		// TODO Auto-generated method stub
 		return mapper.modifyGoodsPack(goodsPack);
 	}
 
+	@Override
 	public int deleteGoodsPack(GoodsPack goodsPack) {
 		// TODO Auto-generated method stub
 		return mapper.deleteGoodsPack(goodsPack);
 	}
 
+	@Override
 	public boolean hl_addGoodsPack(GoodsPack goodsPack,List<GoodsPackAffiliated> apaList) throws Exception {
 		// TODO Auto-generated method stub
 		int addGoodsPackId = 0;
@@ -74,6 +82,7 @@ public class GoodsPackServiceImpl implements GoodsPackService{
 		return true;
 	}
 
+	@Override
 	public boolean hl_modifyGoodsPack(GoodsPack goodsPack,List<GoodsPackAffiliated> apaList) throws Exception {
 		// TODO Auto-generated method stub
 		mapper.modifyGoodsPack(goodsPack);

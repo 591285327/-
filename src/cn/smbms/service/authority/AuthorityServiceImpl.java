@@ -23,26 +23,31 @@ public class AuthorityServiceImpl implements AuthorityService{
 	@Resource
 	private FunctionMapper functionMapper;
 	
+	@Override
 	public List<Authority> getList(Authority authority) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getList(authority);
 	}
 
+	@Override
 	public int addAuthority(Authority authority) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.addAuthority(authority);
 	}
 
+	@Override
 	public int modifyAuthority(Authority authority) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.modifyAuthority(authority);
 	}
 
+	@Override
 	public int deleteAuthority(Authority authority) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.deleteAuthority(authority);
 	}
 
+	@Override
 	public boolean hl_delAddAuthority(Authority authority, String checkFuncList)
 			throws Exception {
 		// TODO Auto-generated method stub
@@ -58,6 +63,7 @@ public class AuthorityServiceImpl implements AuthorityService{
 		return true;
 	}
 
+	@Override
 	public boolean hl_addAuthority(String[] ids,String createdBy) throws Exception {
 		// TODO Auto-generated method stub
 		Authority authority = new Authority();
@@ -86,6 +92,7 @@ public class AuthorityServiceImpl implements AuthorityService{
 		return true;
 	}
 
+	@Override
 	public Authority getAuthority(Authority authority) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getAuthority(authority);

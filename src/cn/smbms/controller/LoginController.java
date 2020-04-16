@@ -2,14 +2,10 @@ package cn.smbms.controller;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
-import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 import org.apache.log4j.Logger;
@@ -20,10 +16,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import cn.smbms.pojo.Affiche;
 import cn.smbms.pojo.Authority;
 import cn.smbms.pojo.Function;
-import cn.smbms.pojo.Information;
 import cn.smbms.pojo.Menu;
 import cn.smbms.pojo.User;
 import cn.smbms.service.affiche.AfficheService;

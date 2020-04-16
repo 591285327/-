@@ -20,21 +20,25 @@ public class FunctionServiceImpl  implements FunctionService {
 	@Resource
 	private FunctionMapper mapper;
 	
+	@Override
 	public List<Function> getSubFunctionList(Function function)  throws Exception{
 		// TODO Auto-generated method stub
 		return mapper.getSubFunctionList(function);
 	}
 	
+	@Override
 	public Function getFunctionById(Function function) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getFunctionById(function);
 	}
 	
+	@Override
 	public List<Function> getMainFunctionList(Authority authority) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getMainFunctionList(authority);
 	}
 
+	@Override
 	public List<Function> getSubFuncList(Function function) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getSubFuncList(function);

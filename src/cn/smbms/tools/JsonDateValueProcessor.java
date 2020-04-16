@@ -40,7 +40,8 @@ public class JsonDateValueProcessor implements JsonValueProcessor {
      * @param jsonConfig
      * @return Object
      */
-    public Object processArrayValue(Object value, JsonConfig jsonConfig) {
+    @Override
+	public Object processArrayValue(Object value, JsonConfig jsonConfig) {
         return process(value);
     }
 
@@ -50,7 +51,8 @@ public class JsonDateValueProcessor implements JsonValueProcessor {
      * @param jsonConfig
      * @return Object
      */
-    public Object processObjectValue(String key, Object value,
+    @Override
+	public Object processObjectValue(String key, Object value,
             JsonConfig jsonConfig) {
         return process(value);
     }

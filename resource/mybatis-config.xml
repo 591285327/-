@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+    <!DOCTYPE configuration   
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+    <configuration>  
+        <settings>  
+            <!-- changes from the defaults -->  
+            <setting name="lazyLoadingEnabled" value="false" />  
+        </settings>  
+       <typeAliases>  
+           <!--这里给实体类取别名，方便在mapper配置文件中使用--> 
+           <typeAlias alias="user" type="cn.smbms.pojo.User"/> 
+           <typeAlias alias="function" type="cn.smbms.pojo.Function"/> 
+           <typeAlias alias="authority" type="cn.smbms.pojo.Authority"/> 
+           <typeAlias alias="dataDictionary" type="cn.smbms.pojo.DataDictionary"/> 
+           <typeAlias alias="role" type="cn.smbms.pojo.Role"/> 
+           <typeAlias alias="affiche" type="cn.smbms.pojo.Affiche"/> 
+           <typeAlias alias="goodsInfo" type="cn.smbms.pojo.GoodsInfo"/> 
+           <typeAlias alias="information" type="cn.smbms..pojo.Information"/> 
+           <typeAlias alias="goodsPack" type="cn.smbms.pojo.GoodsPack"/> 
+           <typeAlias alias="goodsPackAffiliated" type="cn.smbms.pojo.GoodsPackAffiliated"/> 
+           <typeAlias alias="uploadTemp" type="cn.smbms.pojo.UploadTemp"/>
+           <typeAlias alias="leaveMessage" type="cn.smbms.pojo.LeaveMessage"/>
+           <typeAlias alias="reply" type="cn.smbms.pojo.Reply"/>
+           <typeAlias alias="userAccountLog" type="cn.smbms.pojo.UserAccountLog"/> 
+           
+       </typeAliases>  
+   </configuration>  

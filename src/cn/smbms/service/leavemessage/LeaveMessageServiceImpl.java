@@ -19,32 +19,38 @@ public class LeaveMessageServiceImpl implements LeaveMessageService{
 	@Resource
 	private LeaveMessageMapper mapper;
 	
+	@Override
 	public List<LeaveMessage> getLeaveMessageList(LeaveMessage leaveMessage)
 			throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getLeaveMessageList(leaveMessage);
 	}
 
+	@Override
 	public int count(LeaveMessage leaveMessage) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.count(leaveMessage);
 	}
 
+	@Override
 	public int addLeaveMessage(LeaveMessage leaveMessage) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.addLeaveMessage(leaveMessage);
 	}
 
+	@Override
 	public int modifyLeaveMessage(LeaveMessage leaveMessage) {
 		// TODO Auto-generated method stub
 		return mapper.modifyLeaveMessage(leaveMessage);
 	}
 
+	@Override
 	public int deleteLeaveMessage(LeaveMessage deleteLeaveMessage) {
 		// TODO Auto-generated method stub
 		return mapper.deleteLeaveMessage(deleteLeaveMessage);
 	}
 
+	@Override
 	public LeaveMessage getLeaveMessage(LeaveMessage leaveMessage)
 			throws Exception {
 		// TODO Auto-generated method stub

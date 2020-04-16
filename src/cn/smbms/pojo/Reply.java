@@ -13,9 +13,11 @@ public class Reply extends Base{
 	private String replyContent;
 	private Date createTime;
 	private String createdBy;
+	@Override
 	public Integer getId() {
 		return id;
 	}
+	@Override
 	public void setId(Integer id) {
 		this.id = id;
 	}

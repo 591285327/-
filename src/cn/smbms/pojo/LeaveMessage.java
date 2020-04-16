@@ -16,9 +16,11 @@ public class LeaveMessage extends Base{
 	private Integer state;
 	private Date createTime;
 	private String createdBy;
+	@Override
 	public Integer getId() {
 		return id;
 	}
+	@Override
 	public void setId(Integer id) {
 		this.id = id;
 	}

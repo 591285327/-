@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="org.slsale.dao.goodspackaffiliated.GoodsPackAffiliatedMapper">
+<mapper namespace="cn.smbms.dao.goodspackaffiliated.GoodsPackAffiliatedMapper">
 	
     <resultMap type="goodsPackAffiliated" id="goodsPackAffiliatedList">
 		<result property="id" column="id"/>

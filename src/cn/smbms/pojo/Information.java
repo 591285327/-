@@ -20,9 +20,11 @@ public class Information extends Base {
 	private String filePath;
 	private Double fileSize;
 	private Date uploadTime;
+	
 	public Integer getId() {
 		return id;
 	}
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}

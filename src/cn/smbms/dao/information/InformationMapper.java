@@ -1,7 +1,6 @@
 package cn.smbms.dao.information;
 
 import java.util.List;
-
 import cn.smbms.pojo.Information;
 
 
@@ -10,6 +9,7 @@ import cn.smbms.pojo.Information;
  * @author bdqn_hl
  * @date 2014-3-5
  */
+
 public interface InformationMapper {
 	/**
 	 * getList

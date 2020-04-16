@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="org.slsale.dao.affiche.AfficheMapper">
+<mapper namespace="cn.smbms.dao.affiche.AfficheMapper">
 	
 	<select id="getList" resultType="affiche" parameterType="affiche">
 		select * from affiche order by publishTime desc

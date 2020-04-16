@@ -30,9 +30,11 @@ public class GoodsPack extends Base{
 	public void setGoodsJson(String goodsJson) {
 		this.goodsJson = goodsJson;
 	}
+	@Override
 	public Integer getId() {
 		return id;
 	}
+	@Override
 	public void setId(Integer id) {
 		this.id = id;
 	}

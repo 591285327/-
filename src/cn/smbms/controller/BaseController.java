@@ -49,14 +49,16 @@ public class BaseController {
 	@InitBinder
 	public void InitBinder(WebDataBinder dataBinder){
 		dataBinder.registerCustomEditor(Date.class, new PropertyEditorSupport() {
-		    public void setAsText(String value) {
+		    @Override
+			public void setAsText(String value) {
 		        try {
 		            setValue(new SimpleDateFormat("yyyy-MM-dd").parse(value));
 		        } catch(ParseException e) {
 		            setValue(null);
 		        }
 		    }
-		    public String getAsText() {
+		    @Override
+			public String getAsText() {
 		        return new SimpleDateFormat("yyyy-MM-dd").format((Date) getValue());
 		    }        
 

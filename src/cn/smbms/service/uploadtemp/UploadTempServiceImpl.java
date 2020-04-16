@@ -18,16 +18,19 @@ public class UploadTempServiceImpl implements UploadTempService {
 
 	@Resource
 	private UploadTempMapper mapper;
+	@Override
 	public List<UploadTemp> getList(UploadTemp uploadTemp) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.getList(uploadTemp);
 	}
 
+	@Override
 	public int add(UploadTemp uploadTemp) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.add(uploadTemp);
 	}
 
+	@Override
 	public int delete(UploadTemp uploadTemp) throws Exception {
 		// TODO Auto-generated method stub
 		return mapper.delete(uploadTemp);

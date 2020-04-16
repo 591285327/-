@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="org.slsale.dao.authority.AuthorityMapper">
+<mapper namespace="cn.smbms.dao.authority.AuthorityMapper">
 	
 	<select id="getList" resultType="authority" parameterType="authority">
 		select * from au_authority where roleId = #{roleId}

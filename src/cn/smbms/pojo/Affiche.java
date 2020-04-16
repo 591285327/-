@@ -17,9 +17,11 @@ public class Affiche extends Base{
 	private Date publishTime;
 	private Date startTime;
 	private Date endTime;
+	
 	public Integer getId() {
 		return id;
 	}
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -53,15 +55,19 @@ public class Affiche extends Base{
 	public void setPublishTime(Date publishTime) {
 		this.publishTime = publishTime;
 	}
+	
 	public Date getStartTime() {
 		return startTime;
 	}
+	
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
+	
 	public Date getEndTime() {
 		return endTime;
 	}
+	
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}

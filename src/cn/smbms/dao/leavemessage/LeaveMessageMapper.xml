@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="org.slsale.dao.leavemessage.LeaveMessageMapper">
+<mapper namespace="cn.smbms.dao.leavemessage.LeaveMessageMapper">
 	
     <!-- getLeaveMessageList -->
      <select id="getLeaveMessageList" resultType="leaveMessage" parameterType="leaveMessage">

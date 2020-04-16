@@ -11,9 +11,11 @@ public class DataDictionary extends Base{
 	private String typeName;
 	private Integer valueId;
 	private String valueName;
+	
 	public Integer getId() {
 		return id;
 	}
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}
